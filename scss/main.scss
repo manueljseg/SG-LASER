@@ -1,0 +1,413 @@
+*{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@import "base/variables";
+
+@import "components/header";
+@import "components/footer";
+
+@import "views/index";
+@import "views/productos";
+@import "views/servicios";
+@import "views/archivos";
+@import "views/contactos";
+
+/* ------------------------------------------------- */
+
+/* inicio GENERAL */
+main{
+    background-color: $color-gris;
+    color: $color-blanco;
+    padding-bottom: 4%;
+    font-family: 'Barlow', sans-serif;
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 3%;
+    font-size: $font-size-normal*2;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+h4{
+    text-align: center;
+    font-size: 130%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    display: block
+}
+
+.bloqueBlanco{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $color-blanco;
+    color: $color-grismedio;
+    padding: 2% 4%;
+    margin: 0% 4% 4% 4%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    
+    h2{
+        text-align: center;
+    }
+
+    h3{
+        font-size: $font-size-M+20%;
+        text-align: center;
+    }
+}
+
+.greyBackground{
+    background-color: $color-grismedio;
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+}
+
+.sideText{
+    margin-left: 4%;
+}
+
+.btn .btn-primary{
+    background-color: $color-celeste;
+}
+
+/* fin GENERAL */
+
+/* ------------------------------------------------- */
+
+/* MEDIA QUERY - CELULAR */
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    .header{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        &__logo__img{
+            width: 40%;
+        }
+
+        &__list {
+
+            li{
+            font-size: 100%;
+            }
+
+            a{ 
+                :active{
+                color: $color-celeste;
+                background-color: $color-blanco;
+                }
+            }
+        }
+    }
+    
+    /* GENERAL */
+
+    h2{
+        font-size: 150%;
+    }
+
+    /* MAIN: inicio TÍTULOS */
+
+    .titleIndex{ 
+
+        h1{
+        font-size: 200%;
+        font-weight: 800;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 100%;
+            margin: 2% 0% 2% 0%;
+        }
+}
+
+    /* INDEX: inicio TRAYECTORIA */
+
+    iframe{
+        max-width: 90%;
+    }
+
+    .trayectoria{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        &__historia{
+            max-width: 100%;
+            text-align: center;
+            padding: 5%;
+        }
+        
+        &__stats{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+    
+            p{
+                margin-bottom: 4%;
+            }
+    
+            h3{
+                display: inline;
+                font-weight: 800;
+                font-size: 150%;
+                font-style: italic;
+                margin-left: 2%;
+            }
+        }
+    }
+    
+
+    
+
+
+    /* NUESTROS SERVICIOS */
+
+    .servicios{
+        &__laser{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+            .bloqueBlanco{
+                width: 80%;
+
+                img{
+                    position: absolute;
+                    width: 4rem;
+                    transform: translateY(-120%);
+                }
+            }
+        }
+    }
+
+    #carouselExampleControls{
+        max-width: 85%;
+        margin-bottom: 15%;
+    }
+
+    /* INDEX: inicio TERCEROS Y PRODUCTOS */
+
+    .tercProd{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: flex-start;
+
+        p{
+            font-size: 80%;
+        }
+
+        h2{
+            font-size: 110%;
+        }
+
+        .greyBackground{
+            background-color: $color-grismedio;
+            padding-bottom: 1%;
+            margin-bottom: 4%;
+        }
+    }
+
+    /* INDEX: fin TERCEROS Y PRODUCTOS */
+
+    /* INDEX: inicio BENEFICIOS */
+
+    .beneficios{
+        margin: 0% 4% 0% 4%;
+
+        &__section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8%;
+        }
+    
+        &__block{
+            background-color: $color-celeste;
+            width: 80%;
+            padding: 2%;
+            font-size: 110%;
+    
+            p{
+                font-size: 80%;
+            }
+        
+            h3{
+                font-size: 130%;
+            }
+        }
+    
+        &__img{
+            background-color: $color-grismedio;
+            width: 80%;
+        }
+    }
+
+    /* INDEX: fin BENEFICIOS */
+
+    .wppButton{ 
+        p{
+        display: none;
+        }
+    }
+    
+
+    /* INDEX: FOOTER */
+
+    .footer{
+        padding: 4% 8%;
+    }
+
+    /* PRODUCTOS */
+
+    .placas{
+        width: 60%;
+        text-align: center;
+    }
+
+    /* SERVICIOS */
+
+    .galeriaServ{
+        &__images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4;
+        justify-content: space-evenly;
+        margin-right: 5%;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    /* CONTACTOS */
+
+    .mail{
+        font-size: 80%;
+        width: 90%;
+    }
+
+}
+
+/* ------------------------------------------------- */
+
+/* MEDIA QUERY: TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    /* TRAYECTORIA */
+
+        
+    iframe{
+        max-width: 90%;
+    }
+
+    .trayectoria{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        &__historia{
+            max-width: 100%;
+            text-align: center;
+            padding: 5%;
+        }
+
+        &__stats{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+    
+            p{
+                margin-bottom: 4%;
+            }
+            
+            h3{
+                display: inline;
+                font-weight: 800;
+                font-size: 150%;
+                font-style: italic;
+                margin-left: 2%;
+            }
+        }
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .servicios{
+        
+        &__laser{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            .bloqueBlanco{ 
+                
+                img{
+                position: absolute;
+                width: 4rem;
+                transform: translateY(-120%);
+                }
+            }
+        }
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios{ 
+        &__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8%;
+        } 
+
+        &__block{
+            background-color: $color-celeste;
+            width: 80%;
+            padding: 2%;
+            font-size: 110%;
+    
+            p{
+                font-size: 100%;
+            }
+
+            h3{
+                font-size: 130%;
+            }
+        }
+
+        &__img{
+            background-color: $color-grismedio;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #carouselExampleControls{
+        max-width: 40%;
+    }
+}

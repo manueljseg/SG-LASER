@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/21f1f4feb1.js" crossorigin="anonymous"></script>
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>SG-LASER | Archivos</title>
+    <meta name="description" content="Instrucciones sobre el armado de archivos para agilizar el proceso de producción. Sugerencias de diseño. Instructivo en PDF.">
+
+    <meta name="keywords" content="caba, buenos aires, sglaser archivos, consulta laser, grabado laser logo, grabado laser archivo">
+
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+</head>
+<body>
+    <!-- HEADER -->
+	<header class="header navbar navbar-expand-lg">
+		<a class="navbar-brand" href="index.html">
+			<img class="header__logo" src="images/logo_sglaser_blanco.svg" alt="logo SG-LASER">
+		</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+        <!-- Nav -->
+		<nav class="ulcollapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="header__list navbar-nav me-auto mb-2 mb-lg-0 justify-content-start">
+				<li class="header__item nav-item">
+					<a class="header__link nav-link" href="index.html">INICIO</a>
+				</li>
+				<li class="header__item nav-item">
+					<a class="header__link nav-link" href="productos.html">PRODUCTOS</a>
+				</li>
+				<li class="header__item nav-item">
+					<a class="header__link nav-link" href="servicios.html">SERVICIOS</a>
+				</li>
+				<li class="header__item nav-item">
+					<a class="header__link nav-link" href="archivos.html">ARCHIVOS</a>
+				</li>
+				<li class="header__item nav-item">
+					<a class="header__link nav-link" href="contacto.html">CONTACTO</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+        <section class="titleIndex titleIndex__list">
+            <h1 class="animate__animated animate__fadeInLeft">ARCHIVOS</h1>
+        </section>
+    
+        <section class="sideText">
+            <h2>Cómo enviar un archivo</h2>
+        </section>
+
+        <section class="guiaArchivos">
+            <div class="guiaArchivos__texto">
+                <h3>1. FORMATO</h3>
+                <p>El archivo debe estar en alguna de las siguientes extensiones:</p>
+                <ul class="guiaArchivos__lista">
+                    <li>.CDR (Corel Draw X3 en adelante)</li>
+                    <li>.AI (Adobe Illustrator)</li>
+                    <li>.PDF</li>
+                    <li>.SVG</li>
+                </ul>
+
+                <p>El cuerpo del mail debe contener:</p>
+                <ul class="guiaArchivos__lista">
+                    <li>Nombre y apellido</li>
+                    <li>Teléfono</li>
+                    <li>Especificaciones sobre:
+                        <ul>
+                            <li>Material</li>
+                            <li>Espesor</li>
+                            <li>Cantidad</li>
+                            <li>Detalles del contenido/código</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>El nombre del archivo debe estár formateado de la siguiente manera:</p>
+                <p class="guiaArchivos__texto__span">cliente_trabajo_material_espesor</p>
+            </div>
+
+            <div class="guiaArchivos__texto">
+                <h3>2. ARMADO</h3>
+                <p>
+                    El tamaño máximo de corte es de <strong>640x450mm.</strong><br>
+                    El contenido debe estar en formato <strong>vectorial.</strong> <br>
+                    Solo usar contenido rasterizado para imágenes complejas de alta calidad.
+                </p>
+            </div>
+
+            <div class="guiaArchivos__texto">
+                <h3>3. COLORES</h3>
+                <p>
+                    El color permite diferenciar entre marcado, grabado y corte. <br>
+                    Procurá usar el rojo para el corte y el negro para marcado y grabado. <br>
+                    Las líneas de corte y marcado deben ir con el <strong>grosor mínimo</strong> -o "hairline"-.
+                </p>
+                <div class="bloqueBlancoSmall">
+                    <p class="lineaRoja">CORTE: ROJO</p>
+                    <p class="lineaNegra">MARCADO y GRABADO: NEGRO</p>
+                </div>
+            </div>
+
+            <div class="guiaArchivos__texto">
+                <h3>4. SUGERENCIAS</h3>
+                <ol class="guiaArchivos__lista">
+                    <li>Compartir, en lo posible, las líneas de corte (es decir, eliminar una de las líneas superpuestas).</li>
+                    <li>Optimizar uso de material colocando los elementos de manera que abarquen la menor cantidad de área posible.</li>
+                    <li>En caso de utilizar texto, convertirlo a curvas.</li>
+                    <li>Dibujar todo en un único espesor de líneas.</li>
+                    <li>Dibujar líneas cerradas sin relleno.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guiaArchivos__instructivo">
+            <button class="btn btn-dark">
+                <a href="instructivo.pdf">Descargar instructivo</a>
+            </button>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="contacto.html">
+            <h2>Contáctese con nosotros</h2>
+        </a>
+        <section class="footer__info">
+            <div class="footer__info__dir">
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Cnel. Eusebio Martinez de Molinedo 1273 <br>
+                    Valentín Alsina, Lanús, Pcia. de Buenos Aires <br>
+                    CP B1822CAQ <br>
+                    Argentina <br>
+                </p>
+            </div>
+            <div class="footer__info__contact">
+                <p>
+                    <i class="far fa-clock"></i>
+                    Lunes a viernes de 8 a 17hs
+                </p>
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    +54 11 4209 0393
+                </p>
+                <p>
+                    <i class="far fa-envelope"></i>
+                    info@sglaser.com.ar
+                </p>
+            </div>
+            <div class="footer__info__social">
+                <a href="https://www.instagram.com/sg.laser/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="Teléfono Whatsapp">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer__info__brand">
+                <img src="images/logo_sglaser_circular_blanco.svg" alt="logo sglaser circular">
+                <p>© 2020 sglaser.com.ar</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

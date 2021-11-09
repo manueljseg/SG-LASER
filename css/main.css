@@ -1,0 +1,558 @@
+@charset "UTF-8";
+* {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/* Variables */
+/* Colores */
+/* Fuentes */
+/* HEADER */
+.header {
+  background-color: #1383c5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1% 4% 1% 4%;
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+  box-shadow: 0px 1px 10px; }
+  .header__logo {
+    width: 60%; }
+  .header__item {
+    list-style-type: none;
+    margin-left: 4%;
+    font-weight: 700;
+    font-size: 120%;
+    position: relative;
+    text-align: center;
+    padding: 0% 0% 0% 4%; }
+  .header__link {
+    color: #f1f1f1;
+    text-decoration: none; }
+    .header__link:hover {
+      color: #1383c5;
+      background-color: #f1f1f1;
+      border-radius: 1px; }
+
+/* Inicio FOOTER */
+.footer {
+  background: #0f0f0f linear-gradient(#141414, #0a0a0a);
+  color: #f1f1f1;
+  padding: 2% 4%;
+  position: relative;
+  z-index: 2;
+  /* OJO: revisar clase en HTML */ }
+  .footer a {
+    text-decoration: none;
+    color: #f1f1f1; }
+    .footer a:hover {
+      color: #1383c5; }
+  .footer h2 {
+    text-align: center; }
+  .footer__info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%; }
+  .footer__social {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .footer__social i {
+      color: #f1f1f1; }
+
+/* Fin FOOTER */
+/* ------------------------------------------------- */
+/* INDEX */
+/* Inicio BOTÓN WHATSAPP */
+.wppButton {
+  background-color: #298b5c;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font: inherit;
+  font-weight: 500;
+  outline: inherit;
+  position: fixed;
+  right: 0%;
+  bottom: 5%;
+  padding: 1% 1% 1% 1%;
+  z-index: 2; }
+  .wppButton i {
+    color: #f1f1f1;
+    padding: 0% 3% 0% 3%; }
+  .wppButton p {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-bottom: 0%; }
+
+/* Fin BOTÓN WHATSAPP */
+/* MAIN: inicio TÍTULOS */
+.titleIndex {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/laser.png);
+  background-size: cover;
+  margin-bottom: 2%; }
+  .titleIndex img {
+    max-width: 100%;
+    margin-bottom: 4%; }
+  .titleIndex h1 {
+    font-size: 300%;
+    font-weight: 800; }
+  .titleIndex p {
+    font-weight: 400;
+    font-size: 130%;
+    margin: 2% 0% 2% 0%; }
+  .titleIndex a {
+    text-decoration: none; }
+  .titleIndex__list {
+    color: #f1f1f1;
+    padding: 4% 20% 4% 4%; }
+    .titleIndex__list--padExtra {
+      color: #f1f1f1;
+      padding: 4% 20% 4% 4%;
+      padding: 16% 25% 16% 4%; }
+    .titleIndex__list__button button {
+      border: none;
+      background-color: #1383c5;
+      padding: 1%;
+      border-radius: 5px; }
+      .titleIndex__list__button button p {
+        font-size: 130%;
+        font-weight: 600;
+        color: #f1f1f1; }
+
+/* MAIN: fin TÍTULOS */
+/* INDEX: inicio TRAYECTORIA */
+/*  
+.trayectoria{
+    margin: 0% 4% 0% 4%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+*/
+.trayectoria {
+  justify-content: center; }
+  .trayectoria__historia {
+    max-width: 50%; }
+  .trayectoria__stats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 4%; }
+    .trayectoria__stats p {
+      margin-bottom: 4%; }
+    .trayectoria__stats h3 {
+      display: inline;
+      font-weight: 700;
+      font-size: 200%; }
+
+/* INDEX: fin TRAYECTORIA */
+/* INDEX: inicio SERVICIOS */
+.servicios__laser {
+  justify-content: center; }
+  .servicios__laser h2 {
+    text-align: left;
+    margin-left: 4%; }
+  .servicios__laser .bloqueBlanco {
+    margin-top: 1rem;
+    padding-top: 4rem; }
+    .servicios__laser .bloqueBlanco img {
+      position: absolute;
+      width: 6rem;
+      transform: translateY(-115%); }
+
+/* INDEX: fin SERVICIOS */
+/* INDEX: inicio TERCEROS Y PRODUCTOS */
+.tercProd {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  margin-top: 5%; }
+  .tercProd__bloque img {
+    max-width: 50%;
+    margin-top: 2%;
+    border-radius: 5px; }
+  .tercProd .bloqueBlanco {
+    width: 40%;
+    margin: 0% 4% 0% 4%;
+    transform: translateY(-30px); }
+  .tercProd .greyBackground {
+    background-color: #1e1e1e;
+    margin-bottom: 4%;
+    padding-bottom: 0%; }
+  .tercProd .row {
+    justify-content: center; }
+
+/* INDEX: fin TERCEROS Y PRODUCTOS */
+/* INDEX: inicio BENEFICIOS */
+.beneficios {
+  margin: 0% 10% 0% 10%;
+  /* OJO: no parece estar correctamente hecha la clase */ }
+  .beneficios__section {
+    display: flex;
+    margin-bottom: 2%; }
+  .beneficios__block {
+    background-color: #1383c5;
+    width: 40%;
+    padding: 2%;
+    text-align: left;
+    font-size: 120%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .beneficios__block h3 {
+      font-size: 200%; }
+  .beneficios__img {
+    background-color: #1e1e1e;
+    width: 100%; }
+    .beneficios__img img {
+      width: 100%; }
+
+/* INDEX: fin BENEFICIOS */
+/* ------------------------------------------------- */
+/* PRODUCTOS */
+.sideText ul {
+  margin-left: 5%;
+  font-size: 110%; }
+
+.placas .bloqueBlanco {
+  justify-content: space-around; }
+
+.placas img {
+  max-width: 70%;
+  border-radius: 5px; }
+
+/* ------------------------------------------------- */
+/* SERVICIOS */
+.galeriaServ {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 4% 4%; }
+  .galeriaServ__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4;
+    justify-content: space-evenly;
+    margin-right: 10%; }
+    .galeriaServ__images img {
+      max-width: 70%; }
+  .galeriaServ__materials {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 5px solid #1383c5; }
+
+/* ------------------------------------------------- */
+/* ARCHIVOS */
+.guiaArchivos {
+  margin: 2% 8% 2% 8%; }
+  .guiaArchivos__texto {
+    padding: 0% 25% 5% 0%; }
+    .guiaArchivos__texto h3 {
+      text-align: left;
+      font-size: 250%; }
+    .guiaArchivos__texto p {
+      font-weight: 400;
+      font-size: 120%; }
+    .guiaArchivos__texto ul, .guiaArchivos__texto ol {
+      margin-left: 5%; }
+    .guiaArchivos__texto__span {
+      color: #1383c5; }
+  .guiaArchivos__instructivo {
+    display: flex;
+    justify-content: center; }
+    .guiaArchivos__instructivo a {
+      text-decoration: none;
+      color: #f1f1f1;
+      font-size: 120%;
+      font-family: inherit;
+      font-weight: 700;
+      padding: 1% 1%; }
+  .guiaArchivos__lista {
+    font-size: 130%;
+    font-weight: 500; }
+
+.lineaRoja {
+  color: red;
+  font-weight: 800;
+  font-size: 150%; }
+
+.lineaNegra {
+  color: black;
+  font-weight: 800; }
+
+.bloqueBlancoSmall {
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 2% 2% 2% 2%;
+  margin: 2% 0% 2% 4%; }
+
+/* ------------------------------------------------- */
+/* CONTACTOS */
+iframe {
+  width: 100%; }
+
+.contacts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0% 4% 0% 4%; }
+  .contacts__info {
+    text-align: left; }
+    .contacts__info h2 {
+      text-align: left; }
+      .contacts__info h2 i {
+        color: #1383c5; }
+    .contacts__info p {
+      margin-bottom: 5%;
+      font-size: 100%; }
+    .contacts__info a {
+      text-decoration: none;
+      color: #f1f1f1; }
+
+/* ------------------------------------------------- */
+/* inicio GENERAL */
+main {
+  background-color: #323232;
+  color: #f1f1f1;
+  padding-bottom: 4%;
+  font-family: 'Barlow', sans-serif; }
+
+h2 {
+  text-align: left;
+  margin-bottom: 3%;
+  font-size: 200%; }
+
+h3 {
+  text-align: center;
+  margin-bottom: 3%; }
+
+h4 {
+  text-align: center;
+  font-size: 130%;
+  margin-top: 4%;
+  margin-bottom: 2%; }
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  display: block; }
+
+.bloqueBlanco {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+  padding: 2% 4%;
+  margin: 0% 4% 4% 4%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: flex-start; }
+  .bloqueBlanco h2 {
+    text-align: center; }
+  .bloqueBlanco h3 {
+    font-size: 150%;
+    text-align: center; }
+
+.greyBackground {
+  background-color: #1e1e1e;
+  padding-bottom: 1%;
+  margin-bottom: 4%; }
+
+.sideText {
+  margin-left: 4%; }
+
+.btn .btn-primary {
+  background-color: #1383c5; }
+
+/* fin GENERAL */
+/* ------------------------------------------------- */
+/* MEDIA QUERY - CELULAR */
+@media screen and (max-width: 480px) {
+  /* HEADER */
+  .header {
+    justify-content: space-around;
+    flex-wrap: nowrap; }
+    .header__logo__img {
+      width: 40%; }
+    .header__list li {
+      font-size: 100%; }
+    .header__list a :active {
+      color: #1383c5;
+      background-color: #f1f1f1; }
+  /* GENERAL */
+  h2 {
+    font-size: 150%; }
+  /* MAIN: inicio TÍTULOS */
+  .titleIndex h1 {
+    font-size: 200%;
+    font-weight: 800; }
+  .titleIndex p {
+    font-weight: 400;
+    font-size: 100%;
+    margin: 2% 0% 2% 0%; }
+  /* INDEX: inicio TRAYECTORIA */
+  iframe {
+    max-width: 90%; }
+  .trayectoria {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+    .trayectoria__historia {
+      max-width: 100%;
+      text-align: center;
+      padding: 5%; }
+    .trayectoria__stats {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      .trayectoria__stats p {
+        margin-bottom: 4%; }
+      .trayectoria__stats h3 {
+        display: inline;
+        font-weight: 800;
+        font-size: 150%;
+        font-style: italic;
+        margin-left: 2%; }
+  /* NUESTROS SERVICIOS */
+  .servicios__laser {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .servicios__laser .bloqueBlanco {
+      width: 80%; }
+      .servicios__laser .bloqueBlanco img {
+        position: absolute;
+        width: 4rem;
+        transform: translateY(-120%); }
+  #carouselExampleControls {
+    max-width: 85%;
+    margin-bottom: 15%; }
+  /* INDEX: inicio TERCEROS Y PRODUCTOS */
+  .tercProd {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: flex-start; }
+    .tercProd p {
+      font-size: 80%; }
+    .tercProd h2 {
+      font-size: 110%; }
+    .tercProd .greyBackground {
+      background-color: #1e1e1e;
+      padding-bottom: 1%;
+      margin-bottom: 4%; }
+  /* INDEX: fin TERCEROS Y PRODUCTOS */
+  /* INDEX: inicio BENEFICIOS */
+  .beneficios {
+    margin: 0% 4% 0% 4%; }
+    .beneficios__section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 8%; }
+    .beneficios__block {
+      background-color: #1383c5;
+      width: 80%;
+      padding: 2%;
+      font-size: 110%; }
+      .beneficios__block p {
+        font-size: 80%; }
+      .beneficios__block h3 {
+        font-size: 130%; }
+    .beneficios__img {
+      background-color: #1e1e1e;
+      width: 80%; }
+  /* INDEX: fin BENEFICIOS */
+  .wppButton p {
+    display: none; }
+  /* INDEX: FOOTER */
+  .footer {
+    padding: 4% 8%; }
+  /* PRODUCTOS */
+  .placas {
+    width: 60%;
+    text-align: center; }
+  /* SERVICIOS */
+  .galeriaServ__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4;
+    justify-content: space-evenly;
+    margin-right: 5%; }
+    .galeriaServ__images img {
+      max-width: 100%; }
+  /* CONTACTOS */
+  .mail {
+    font-size: 80%;
+    width: 90%; } }
+
+/* ------------------------------------------------- */
+/* MEDIA QUERY: TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* TRAYECTORIA */
+  iframe {
+    max-width: 90%; }
+  .trayectoria {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+    .trayectoria__historia {
+      max-width: 100%;
+      text-align: center;
+      padding: 5%; }
+    .trayectoria__stats {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      .trayectoria__stats p {
+        margin-bottom: 4%; }
+      .trayectoria__stats h3 {
+        display: inline;
+        font-weight: 800;
+        font-size: 150%;
+        font-style: italic;
+        margin-left: 2%; }
+  /* NUESTROS SERVICIOS */
+  .servicios__laser {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .servicios__laser .bloqueBlanco img {
+      position: absolute;
+      width: 4rem;
+      transform: translateY(-120%); }
+  /* BENEFICIOS */
+  .beneficios__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8%; }
+  .beneficios__block {
+    background-color: #1383c5;
+    width: 80%;
+    padding: 2%;
+    font-size: 110%; }
+    .beneficios__block p {
+      font-size: 100%; }
+    .beneficios__block h3 {
+      font-size: 130%; }
+  .beneficios__img {
+    background-color: #1e1e1e;
+    width: 80%; } }
+
+@media screen and (min-width: 768px) {
+  #carouselExampleControls {
+    max-width: 40%; } }

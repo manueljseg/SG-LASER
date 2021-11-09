@@ -1,0 +1,66 @@
+/* ------------------------------------------------- */
+
+/* ARCHIVOS */
+
+.guiaArchivos{
+    margin: 2% 8% 2% 8%;
+
+    &__texto{
+        padding: 0% 25% 5% 0%;
+    
+        h3{
+            text-align: left;
+            font-size: 250%;
+        }
+    
+        p{
+            font-weight: 400;
+            font-size: 120%;
+        }
+    
+        ul, ol{
+            margin-left: 5%;
+        }
+
+        &__span{
+            color: $color-celeste;
+        }
+    }
+
+    &__instructivo{
+        display: flex;
+        justify-content: center;
+    
+        a{
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 120%;
+            font-family: inherit;
+            font-weight: 700;
+            padding: 1% 1%;
+        }
+    }
+
+    &__lista{
+        font-size: $font-size-M;
+        font-weight: 500;
+    }
+}
+
+.lineaRoja{
+    color: red;
+    font-weight: 800;
+    font-size: 150%;
+}
+
+.lineaNegra{
+    color: black;
+    font-weight: 800;
+}
+
+.bloqueBlancoSmall{
+    display: inline-block;
+    background-color: $color-blanco;
+    padding: 2% 2% 2% 2%;
+    margin: 2% 0% 2% 4%;
+}

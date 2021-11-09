@@ -1,0 +1,29 @@
+/* ------------------------------------------------- */
+
+/* SERVICIOS */
+
+.galeriaServ{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 4% 4%;
+
+    &__images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4;
+        justify-content: space-evenly;
+        margin-right: 10%;
+
+        img{
+            max-width: 70%;
+        }
+    }
+
+    &__materials{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 5px solid $color-celeste;
+}
+}

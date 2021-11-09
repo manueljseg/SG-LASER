@@ -1,0 +1,230 @@
+/* ------------------------------------------------- */
+
+/* INDEX */
+
+/* Inicio BOTÓN WHATSAPP */
+
+.wppButton{
+    background-color: $color-wpp;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font: inherit;
+    font-weight: 500;
+	outline: inherit;
+    position: fixed;
+    right: 0%;
+    bottom: 5%;
+    padding: 1% 1% 1% 1%;
+    z-index: 2;
+
+    i{
+        color: $color-blanco;
+        padding: 0% 3% 0% 3%;
+    }
+
+    p{
+        text-decoration: none;
+        color: $color-blanco;
+        margin-bottom: 0%;
+    }
+}
+
+/* Fin BOTÓN WHATSAPP */
+
+/* MAIN: inicio TÍTULOS */
+
+.titleIndex{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../images/laser.png);
+    background-size: cover;
+    margin-bottom: 2%;
+
+    img{
+        max-width: 100%;
+        margin-bottom: 4%;
+    }
+
+    h1{
+        font-size: 300%;
+        font-weight: 800;
+    }
+    
+    p{
+        font-weight: 400;
+        font-size: 130%;
+        margin: 2% 0% 2% 0%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    &__list{
+        color: $color-blanco;
+        padding: 4% 20% 4% 4%;
+
+        &--padExtra{
+            color: $color-blanco;
+            padding: 4% 20% 4% 4%;
+            padding: 16% 25% 16% 4%;
+        }
+
+        &__button{
+
+            button{
+            border: none;
+            background-color: $color-celeste;
+            padding: 1%;
+            border-radius: 5px;
+
+                p{
+                    font-size: 130%;
+                    font-weight: 600;
+                    color: $color-blanco;
+                }
+            }
+        }
+    }
+}
+
+/* MAIN: fin TÍTULOS */
+
+/* INDEX: inicio TRAYECTORIA */
+
+/*  
+.trayectoria{
+    margin: 0% 4% 0% 4%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+*/
+
+.trayectoria{
+    justify-content: center;
+
+    &__historia{
+        max-width: 50%;
+    }
+
+    &__stats{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 4%;
+    
+        p{
+            margin-bottom: 4%;
+        }
+    
+        h3{
+            display: inline;
+            font-weight: 700;
+            font-size: $font-size-L;
+        }
+    }
+}
+
+/* INDEX: fin TRAYECTORIA */
+
+/* INDEX: inicio SERVICIOS */
+
+.servicios__laser{
+    justify-content: center;
+
+    h2{
+        text-align: left;
+        margin-left: 4%;
+    }
+
+    .bloqueBlanco{
+        margin-top: 1rem;
+        padding-top: 4rem;
+
+        img{
+            position: absolute;
+            width: 6rem;
+            transform: translateY(-115%);
+        }
+    }
+}
+
+/* INDEX: fin SERVICIOS */
+
+/* INDEX: inicio TERCEROS Y PRODUCTOS */
+
+.tercProd{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 5%;
+
+    &__bloque{
+        img{
+            max-width: 50%;
+            margin-top: 2%;
+            border-radius: 5px;
+        }
+    }
+
+    .bloqueBlanco{
+        width: 40%;
+        margin: 0% 4% 0% 4%;
+        transform: translateY(-30px);
+    }
+
+    .greyBackground{
+        background-color: $color-grismedio;
+        margin-bottom: 4%;
+        padding-bottom: 0%;
+    }
+
+    .row{
+        justify-content: center;
+    }
+}
+
+/* INDEX: fin TERCEROS Y PRODUCTOS */
+
+/* INDEX: inicio BENEFICIOS */
+
+.beneficios{
+    margin: 0% 10% 0% 10%;
+
+    &__section{
+        display: flex;
+        margin-bottom: 2%;
+    }    
+
+    /* OJO: no parece estar correctamente hecha la clase */
+    &__block{
+        background-color: $color-celeste;
+        width: 40%;
+        padding: 2%;
+        text-align: left;
+        font-size: 120%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+            font-size: 200%;
+        }
+    }
+
+    &__img{
+        background-color: $color-grismedio;
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+/* INDEX: fin BENEFICIOS */
