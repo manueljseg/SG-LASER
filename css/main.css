@@ -307,10 +307,11 @@ iframe {
 .contacts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0% 4% 0% 4%; }
   .contacts__info {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 5%; }
     .contacts__info h2 {
       text-align: left; }
       .contacts__info h2 i {
