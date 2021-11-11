@@ -1,2 +1,2 @@
 # SG-LASER
-Proyect done on an online course to learn git.
+Proyect aimed at redesigning SG-LASER's website.
