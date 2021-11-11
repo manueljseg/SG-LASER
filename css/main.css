@@ -241,11 +241,13 @@
   .galeriaServ__images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4;
+    grid-template-rows: repeat(4, 1fr);
     justify-content: space-evenly;
-    margin-right: 10%; }
+    margin-right: 10%;
+    row-gap: 3%;
+    column-gap: 5%; }
     .galeriaServ__images img {
-      max-width: 70%; }
+      width: 100%; }
   .galeriaServ__materials {
     display: flex;
     flex-flow: column;
