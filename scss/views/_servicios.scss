@@ -11,12 +11,14 @@
     &__images{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 4;
+        grid-template-rows: repeat(4,1fr);
         justify-content: space-evenly;
         margin-right: 10%;
+        row-gap: 1%;
+        column-gap: 2%;
 
         img{
-            max-width: 70%;
+            width: 100%;
         }
     }
 

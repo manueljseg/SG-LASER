@@ -9,11 +9,12 @@ iframe{
 .contacts{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0% 4% 0% 4%;
 
     &__info{
         text-align: left;
+        margin-bottom: 5%;
     
         h2{
             text-align: left;
