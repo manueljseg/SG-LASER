@@ -12,27 +12,56 @@
     box-shadow: 0px 1px 10px;
 
     &__logo{
-        width: 70%;
+        width: 80%;
     }
 
     &__item{
         list-style-type: none;
-        margin-left: 4%;
         font-weight: 700;
         font-size: 120%;
         position: relative;
         text-align: center;
-        padding: 0% 0% 0% 4%;
     }
 
     &__link{
         color: $color-blanco;
         text-decoration: none;
+        text-align: right;
 
         &:hover{
             color: $color-celeste;
             background-color: $color-blanco;
             border-radius: 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    .header{
+        /*
+        justify-content: space-around;
+        flex-flow: row wrap;
+        */
+
+        &__logo{
+            width: 40%;
+        }
+
+        &__list {
+
+            li{
+            font-size: 100%;
+            }
+
+            a{ 
+                :active{
+                color: $color-celeste;
+                background-color: $color-blanco;
+                }
+            }
         }
     }
 }

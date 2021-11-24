@@ -47,7 +47,7 @@ iframe{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4%;
-    display: block
+    display: block;
 }
 
 .bloqueBlanco{
@@ -92,31 +92,6 @@ iframe{
 /* MEDIA QUERY - CELULAR */
 
 @media screen and (max-width: 480px) {
-
-    /* HEADER */
-
-    .header{
-        justify-content: space-around;
-        flex-wrap: nowrap;
-
-        &__logo__img{
-            width: 40%;
-        }
-
-        &__list {
-
-            li{
-            font-size: 100%;
-            }
-
-            a{ 
-                :active{
-                color: $color-celeste;
-                background-color: $color-blanco;
-                }
-            }
-        }
-    }
     
     /* GENERAL */
 
