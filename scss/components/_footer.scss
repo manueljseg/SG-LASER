@@ -25,7 +25,22 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 6%
+        margin-bottom: 6%;
+        font-size: 110%;
+
+        &__brand{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                max-width: 100%;
+            }
+
+            p{
+                font-size: $font-size-SM;
+            }
+        }
     }
 
     /* OJO: revisar clase en HTML */
