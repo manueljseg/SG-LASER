@@ -63,7 +63,8 @@
     .footer a:hover {
       color: #1383c5; }
   .footer h2 {
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .footer__info {
     display: flex;
     flex-flow: row wrap;
@@ -78,7 +79,7 @@
       flex-direction: column;
       align-items: center; }
       .footer__info__brand img {
-        max-width: 100%; }
+        width: 40%; }
       .footer__info__brand p {
         font-size: 80%; }
     .footer__info__dir {
@@ -100,6 +101,23 @@
       align-items: center; }
       .footer__info__social a {
         margin-bottom: 10%; }
+
+@media screen and (max-width: 480px) {
+  /* INDEX: FOOTER */
+  .footer {
+    padding: 4% 8%; }
+    .footer h2 {
+      font-size: 200%;
+      margin-bottom: 10%; }
+    .footer__info {
+      flex-direction: column;
+      align-items: flex-start; }
+      .footer__info__social {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10%; }
+        .footer__info__social a {
+          margin-right: 30%; } }
 
 /* Fin FOOTER */
 /* ------------------------------------------------- */
@@ -506,9 +524,6 @@ iframe {
   /* INDEX: fin BENEFICIOS */
   .wppButton p {
     display: none; }
-  /* INDEX: FOOTER */
-  .footer {
-    padding: 4% 8%; }
   /* PRODUCTOS */
   .placas {
     width: 60%;

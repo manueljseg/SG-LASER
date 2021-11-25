@@ -18,6 +18,7 @@
 
     h2 {
         text-align: center;
+        font-weight: 600;
     }
 
     &__info{
@@ -38,7 +39,7 @@
             align-items: center;
 
             img{
-                max-width: 100%;
+                width: 40%;
             }
 
             p{
@@ -77,6 +78,35 @@
 
             a{
                 margin-bottom: 10%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* INDEX: FOOTER */
+
+    .footer{
+        padding: 4% 8%;
+
+        h2{
+            font-size: $font-size-L;
+            margin-bottom: 10%;
+        }
+
+        &__info{
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__social{
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 10%;
+
+                a{
+                    margin-right: 30%;
+                }
             }
         }
     }
