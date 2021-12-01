@@ -38,7 +38,7 @@
 /* MAIN: inicio TÍTULOS */
 
 .titleIndex{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../images/laser.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../images/index_laser.jpg);
     background-size: cover;
     margin-bottom: 2%;
 
@@ -163,10 +163,18 @@
     margin-top: 5%;
 
     &__bloque{
+
+        &--big{
+
+            img{
+                max-width: 100%;
+                border-radius: 5px;
+            }
+        }
+
         img{
             max-width: 50%;
             margin-top: 2%;
-            border-radius: 5px;
         }
     }
 
