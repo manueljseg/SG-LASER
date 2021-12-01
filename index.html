@@ -34,7 +34,7 @@
 </head>
 <body>
     <!-- HEADER -->
-	<header class="header navbar navbar-expand-lg">
+    <header class="header navbar navbar-expand-lg">
 		<a class="navbar-brand" href="index.html">
 			<img class="header__logo" src="images/logo_sglaser_blanco.svg" alt="logo SG-LASER">
 		</a>
@@ -42,8 +42,8 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
         <!-- Nav -->
-		<nav class="ulcollapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="header__list navbar-nav me-auto mb-2 mb-lg-0 justify-content-start">
+		<nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<ul class="header__list navbar-nav mb-2 mb-lg-0">
 				<li class="header__item nav-item">
 					<a class="header__link nav-link" href="index.html">INICIO</a>
 				</li>
@@ -104,7 +104,7 @@
                     Esperamos su llamada o consulta, Atte
                     <br>
                     <br>
-                    Guillermo Segade
+                    <strong>Guillermo Segade</strong>
                     <br>
                     Director.
                     </p>
@@ -181,15 +181,15 @@
         <!-- TERCEROS Y PRODUCTOS -->
         <section class="tercProd greyBackground container-fluid">
             <div class="row">
-                <article class="tercProd__bloque bloqueBlanco col-md-6">
+                <article class="tercProd__bloque--big bloqueBlanco col-md-6">
                     <h2>SERVICIO A TERCEROS</h2>
                     <p>Nuestra principal actividad es realizar el servicio de marcado, grabado y corte láser para terceros, enfocándonos en trabajos al por mayor.</p>
-                    <img src="images/maquinas/tercprod.JPG" alt="imagen de servicios a terceros">
+                    <img src="images/maquinas/tercprod_servicios.jpg" alt="imagen de servicios a terceros">
                 </article>
                 <article class="tercProd__bloque bloqueBlanco col-md-6">
                     <h2>PRODUCTOS</h2>
                     <p>Contamos con una línea de productos propios como ser placas de identificación, tags para activos fijos, cortes especiales de MDF y acrílico, y servicio de vectorizado y edición de logotipos.</p>
-                    <img src="images/chapas/chapa_cencosud.jpg" alt="imagen de productos">
+                    <img src="images/chapas/chapa_cencosud.png" alt="imagen de productos">
                 </article>
             </div>
             <div class="greyBackground"></div>
@@ -204,7 +204,7 @@
                     <p>Contamos con experiencia y equipamiento para cubrir todas las necesidades de la industria, realizando todo tipo de trabajos pequeños y en grandes cantidades</p>
                 </div>
                 <div class="beneficios__img">
-                    <img src="images/maquinas/profesional.jpg" alt="imagen de trabajo profesional">
+                    <img src="images/maquinas/beneficios_profesional.jpg" alt="imagen de trabajo profesional">
                 </div>
             </div>
             <div class="beneficios__section">
@@ -222,7 +222,7 @@
                     <p>Nuestra experiencia acumulada y proveedores de confianza nos permiten realizar el proceso rápidamente para poder entregar velozmente los trabajos a nuestros clientes.</p>
                 </div>
                 <div class="beneficios__img">
-                    <img src="images/maquinas/velocidad2.png" alt="imagen de velocidad de entrega">
+                    <img src="images/maquinas/beneficios_velocidad.jpg" alt="imagen de velocidad de entrega">
                 </div>
             </div>
         </section>
@@ -235,8 +235,8 @@
         </a>
         <section class="footer__info">
             <div class="footer__info__dir">
+                <i class="fas fa-map-marker-alt"></i>
                 <p>
-                    <i class="fas fa-map-marker-alt"></i>
                     Cnel. Eusebio Martinez de Molinedo 1273 <br>
                     Valentín Alsina, Lanús, Pcia. de Buenos Aires <br>
                     CP B1822CAQ <br>
@@ -244,30 +244,45 @@
                 </p>
             </div>
             <div class="footer__info__contact">
-                <p>
+                <div>
                     <i class="far fa-clock"></i>
-                    Lunes a viernes de 8 a 17hs
-                </p>
-                <p>
+                    <p>
+                        Lunes a viernes<br>
+                        de 8 a 17hs
+                    </p>
+                </div>
+                <div>
                     <i class="fas fa-phone-alt"></i>
-                    +54 11 4209 0393
-                </p>
-                <p>
+                    <p>+54 11 4209 0393</p>
+                </div>
+                <div>
                     <i class="far fa-envelope"></i>
-                    info@sglaser.com.ar
-                </p>
-            </div>
-            <div class="footer__info__social">
-                <a href="https://www.instagram.com/sg.laser/">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </a>
-                <a href="Teléfono Whatsapp">
-                    <i class="fab fa-whatsapp fa-2x"></i>
-                </a>
+                    <p>info@sglaser.com.ar</p>
+                </div>
             </div>
             <div class="footer__info__brand">
                 <img src="images/logo_sglaser_circular_blanco.svg" alt="logo sglaser circular">
-                <p>© 2020 sglaser.com.ar</p>
+            </div>
+        </section>
+        <section class="footer__social">
+            <hr>
+            <div class="footer__social__links">
+                <a href="https://www.instagram.com/sg.laser/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://youtube.com/channel/UCzUaPk2KkA8nWTFBDbqlahg" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+                <a href="Teléfono Whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer__social__credits">
+                <p>
+                    <a href="index.html">© 2020 sglaser.com.ar</a>
+                    - Desarrollado por 
+                    <a href="https://github.com/manueljseg" target="_blank" rel="noopener noreferrer">Manuel Segade</a>
+                </p>
             </div>
         </section>
     </footer>
