@@ -48,7 +48,7 @@
     }
 
     h1{
-        font-size: 300%;
+        font-size: 400%;
         font-weight: 800;
     }
     
@@ -69,7 +69,7 @@
         &--padExtra{
             color: $color-blanco;
             padding: 4% 20% 4% 4%;
-            padding: 16% 25% 16% 4%;
+            padding: 12% 25% 12% 4%;
         }
 
         &__button{
@@ -106,24 +106,78 @@
 .trayectoria{
     justify-content: center;
 
+    /* 
+    &__video{
+
+        &__graphic{
+            width: 400px;
+            height: 200px;
+            background-color: $color-celeste;
+            transform: skewX(20deg);
+            transform: translate(30px 30px);
+        }
+    }
+     */
+
     &__historia{
         max-width: 50%;
+
+        h2{
+            font-size: $font-size-L;
+            font-weight: 700;
+            background-image: url(../images/vector_title.svg);
+            background-size: cover;
+        }
     }
 
     &__stats{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
         margin-bottom: 4%;
     
-        p{
-            margin-bottom: 4%;
-        }
+        &__block{
+            text-align: center;
+            background-color: $color-gris;
+            border: 2px solid $color-celeste;
+            border-radius: 10px;
+            width: 20%;
+            padding: 1% 2% 1% 2%;
+            margin: 0% 2% 0% 2%;
+
+            h3{
+                display: inline;
+                font-size: $font-size-L;
+                font-weight: 800;
+            }
+
+            p{
+                font-weight: 500;
+            }
+
+            &--big{
+                text-align: center;
+                background-color: $color-gris;
+                border: 2px solid $color-celeste;
+                border-radius: 10px;
+                width: 30%;
+                padding: 2% 0% 2% 0%;
+
+                h3{
+                    display: inline;
+                    font-size: $font-size-L+50;
+                    font-weight: 800;
+                }
     
-        h3{
-            display: inline;
-            font-weight: 700;
-            font-size: $font-size-L;
+                p{
+                    font-weight: 500;
+                }
+
+                span{
+                    font-size: $font-size-SM;
+                }
+            }
         }
     }
 }
@@ -132,22 +186,35 @@
 
 /* INDEX: inicio SERVICIOS */
 
-.servicios__laser{
+.servicios{
     justify-content: center;
 
     h2{
         text-align: left;
-        margin-left: 4%;
+        font-weight: 600;
+        margin-bottom: 5%;
     }
 
-    .bloqueBlanco{
-        margin-top: 1rem;
-        padding-top: 4rem;
+    &__laser{
 
-        img{
-            position: absolute;
-            width: 6rem;
-            transform: translateY(-115%);
+        h3{
+            font-weight: 800;
+            color: $color-grismedio;
+        }
+
+        p{
+            font-size: $font-size-normal+10;
+        }
+
+        .bloqueBlanco{
+            margin-top: 1rem;
+            padding-top: 4rem;
+    
+            img{
+                position: absolute;
+                width: 6rem;
+                transform: translateY(-115%);
+            }
         }
     }
 }
@@ -164,7 +231,17 @@
 
     &__bloque{
 
+        h2{
+            font-weight: 700;
+            color: $color-grismedio;
+        }
+
         &--big{
+
+            /* buscar elemento para no repetir este codigo */
+            h2{
+                font-weight: 700;
+            }
 
             img{
                 max-width: 100%;
@@ -181,7 +258,7 @@
     .bloqueBlanco{
         width: 40%;
         margin: 0% 4% 0% 4%;
-        transform: translateY(-30px);
+        transform: translateY(-40px);
     }
 
     .greyBackground{
@@ -202,6 +279,12 @@
 .beneficios{
     margin: 0% 10% 0% 10%;
 
+    h2{
+        font-size: $font-size-L;
+        font-weight: 700;
+        margin-bottom: 4%;
+    }
+
     &__section{
         display: flex;
         margin-bottom: 2%;
@@ -209,7 +292,7 @@
 
     /* OJO: no parece estar correctamente hecha la clase */
     &__block{
-        background-color: $color-celeste;
+        border: 2px solid $color-celeste;
         width: 40%;
         padding: 2%;
         text-align: left;
@@ -220,7 +303,8 @@
         justify-content: center;
 
         h3{
-            font-size: 200%;
+            font-size: $font-size-XL;
+            font-weight: 700;
         }
     }
 

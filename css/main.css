@@ -165,7 +165,7 @@
     max-width: 100%;
     margin-bottom: 4%; }
   .titleIndex h1 {
-    font-size: 300%;
+    font-size: 400%;
     font-weight: 800; }
   .titleIndex p {
     font-weight: 400;
@@ -179,7 +179,7 @@
     .titleIndex__list--padExtra {
       color: #f1f1f1;
       padding: 4% 20% 4% 4%;
-      padding: 16% 25% 16% 4%; }
+      padding: 12% 25% 12% 4%; }
     .titleIndex__list__button button {
       border: none;
       background-color: #1383c5;
@@ -201,28 +201,75 @@
 }
 */
 .trayectoria {
-  justify-content: center; }
+  justify-content: center;
+  /* 
+    &__video{
+
+        &__graphic{
+            width: 400px;
+            height: 200px;
+            background-color: $color-celeste;
+            transform: skewX(20deg);
+            transform: translate(30px 30px);
+        }
+    }
+     */ }
   .trayectoria__historia {
     max-width: 50%; }
+    .trayectoria__historia h2 {
+      font-size: 200%;
+      font-weight: 700;
+      background-image: url(../images/vector_title.svg);
+      background-size: cover; }
   .trayectoria__stats {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 4%; }
-    .trayectoria__stats p {
-      margin-bottom: 4%; }
-    .trayectoria__stats h3 {
-      display: inline;
-      font-weight: 700;
-      font-size: 200%; }
+    .trayectoria__stats__block {
+      text-align: center;
+      background-color: #323232;
+      border: 2px solid #1383c5;
+      border-radius: 10px;
+      width: 20%;
+      padding: 1% 2% 1% 2%;
+      margin: 0% 2% 0% 2%; }
+      .trayectoria__stats__block h3 {
+        display: inline;
+        font-size: 200%;
+        font-weight: 800; }
+      .trayectoria__stats__block p {
+        font-weight: 500; }
+      .trayectoria__stats__block--big {
+        text-align: center;
+        background-color: #323232;
+        border: 2px solid #1383c5;
+        border-radius: 10px;
+        width: 30%;
+        padding: 2% 0% 2% 0%; }
+        .trayectoria__stats__block--big h3 {
+          display: inline;
+          font-size: 250%;
+          font-weight: 800; }
+        .trayectoria__stats__block--big p {
+          font-weight: 500; }
+        .trayectoria__stats__block--big span {
+          font-size: 80%; }
 
 /* INDEX: fin TRAYECTORIA */
 /* INDEX: inicio SERVICIOS */
-.servicios__laser {
+.servicios {
   justify-content: center; }
-  .servicios__laser h2 {
+  .servicios h2 {
     text-align: left;
-    margin-left: 4%; }
+    font-weight: 600;
+    margin-bottom: 5%; }
+  .servicios__laser h3 {
+    font-weight: 800;
+    color: #1e1e1e; }
+  .servicios__laser p {
+    font-size: 110%; }
   .servicios__laser .bloqueBlanco {
     margin-top: 1rem;
     padding-top: 4rem; }
@@ -238,16 +285,23 @@
   justify-content: center;
   align-content: flex-start;
   margin-top: 5%; }
-  .tercProd__bloque--big img {
-    max-width: 100%;
-    border-radius: 5px; }
+  .tercProd__bloque h2 {
+    font-weight: 700;
+    color: #1e1e1e; }
+  .tercProd__bloque--big {
+    /* buscar elemento para no repetir este codigo */ }
+    .tercProd__bloque--big h2 {
+      font-weight: 700; }
+    .tercProd__bloque--big img {
+      max-width: 100%;
+      border-radius: 5px; }
   .tercProd__bloque img {
     max-width: 50%;
     margin-top: 2%; }
   .tercProd .bloqueBlanco {
     width: 40%;
     margin: 0% 4% 0% 4%;
-    transform: translateY(-30px); }
+    transform: translateY(-40px); }
   .tercProd .greyBackground {
     background-color: #1e1e1e;
     margin-bottom: 4%;
@@ -260,11 +314,15 @@
 .beneficios {
   margin: 0% 10% 0% 10%;
   /* OJO: no parece estar correctamente hecha la clase */ }
+  .beneficios h2 {
+    font-size: 200%;
+    font-weight: 700;
+    margin-bottom: 4%; }
   .beneficios__section {
     display: flex;
     margin-bottom: 2%; }
   .beneficios__block {
-    background-color: #1383c5;
+    border: 2px solid #1383c5;
     width: 40%;
     padding: 2%;
     text-align: left;
@@ -274,7 +332,8 @@
     flex-direction: column;
     justify-content: center; }
     .beneficios__block h3 {
-      font-size: 200%; }
+      font-size: 300%;
+      font-weight: 700; }
   .beneficios__img {
     background-color: #1e1e1e;
     width: 100%; }
