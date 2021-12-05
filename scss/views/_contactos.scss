@@ -32,6 +32,34 @@ iframe{
         a{
             text-decoration: none;
             color: $color-blanco;
+            margin: 0% 3% 0% 0%;
+            transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+
+            &:hover{
+                color: $color-celeste;
+                transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+            }
         }
+    
+    .bloqueBlanco{
+        padding: 2% 2% 2% 2%;
     }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* CONTACTOS */
+
+    .mail{
+        font-size: $font-size-SM;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
 }

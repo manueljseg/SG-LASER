@@ -73,12 +73,30 @@ iframe{
 
 .greyBackground{
     background-color: $color-grismedio;
-    padding-bottom: 1%;
     margin-bottom: 4%;
 }
 
 .sideText{
-    margin-left: 4%;
+    margin-left: 8%;
+
+    h2{
+        font-size: $font-size-L;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 150%;
+            background: $color-grismedio;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) skewX(30deg);
+            z-index: -1;
+        }
+    }
 }
 
 .btn .btn-primary{
@@ -95,158 +113,6 @@ iframe{
     
     /* GENERAL */
 
-    h2{
-        font-size: 150%;
-    }
-
-    /* MAIN: inicio TÍTULOS */
-
-    .titleIndex{ 
-
-        h1{
-        font-size: 200%;
-        font-weight: 800;
-        }
-
-        p{
-            font-weight: 400;
-            font-size: 100%;
-            margin: 2% 0% 2% 0%;
-        }
-}
-
-    /* INDEX: inicio TRAYECTORIA */
-
-    iframe{
-        max-width: 90%;
-    }
-
-    .trayectoria{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-
-        &__historia{
-            max-width: 100%;
-            text-align: center;
-            padding: 5%;
-        }
-        
-        &__stats{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-    
-            p{
-                margin-bottom: 4%;
-            }
-    
-            h3{
-                display: inline;
-                font-weight: 800;
-                font-size: 150%;
-                font-style: italic;
-                margin-left: 2%;
-            }
-        }
-    }
-    
-
-    
-
-
-    /* NUESTROS SERVICIOS */
-
-    .servicios{
-        &__laser{
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-
-            .bloqueBlanco{
-                width: 80%;
-
-                img{
-                    position: absolute;
-                    width: 4rem;
-                    transform: translateY(-120%);
-                }
-            }
-        }
-    }
-
-    #carouselExampleControls{
-        max-width: 85%;
-        margin-bottom: 15%;
-    }
-
-    /* INDEX: inicio TERCEROS Y PRODUCTOS */
-
-    .tercProd{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-content: flex-start;
-
-        p{
-            font-size: 80%;
-        }
-
-        h2{
-            font-size: 110%;
-        }
-
-        .greyBackground{
-            background-color: $color-grismedio;
-            padding-bottom: 1%;
-            margin-bottom: 4%;
-        }
-    }
-
-    /* INDEX: fin TERCEROS Y PRODUCTOS */
-
-    /* INDEX: inicio BENEFICIOS */
-
-    .beneficios{
-        margin: 0% 4% 0% 4%;
-
-        &__section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 8%;
-        }
-    
-        &__block{
-            background-color: $color-celeste;
-            width: 80%;
-            padding: 2%;
-            font-size: 110%;
-    
-            p{
-                font-size: 80%;
-            }
-        
-            h3{
-                font-size: 130%;
-            }
-        }
-    
-        &__img{
-            background-color: $color-grismedio;
-            width: 80%;
-        }
-    }
-
-    /* INDEX: fin BENEFICIOS */
-
-    .wppButton{ 
-        p{
-        display: none;
-        }
-    }
-    
     /* PRODUCTOS */
 
     .placas{
@@ -283,96 +149,6 @@ iframe{
 
 /* MEDIA QUERY: TABLET */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
-    /* TRAYECTORIA */
-
-        
-    iframe{
-        max-width: 90%;
-    }
-
-    .trayectoria{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-
-        &__historia{
-            max-width: 100%;
-            text-align: center;
-            padding: 5%;
-        }
-
-        &__stats{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-    
-            p{
-                margin-bottom: 4%;
-            }
-            
-            h3{
-                display: inline;
-                font-weight: 800;
-                font-size: 150%;
-                font-style: italic;
-                margin-left: 2%;
-            }
-        }
-    }
-
-    /* NUESTROS SERVICIOS */
-
-    .servicios{
-        
-        &__laser{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-            .bloqueBlanco{ 
-                
-                img{
-                position: absolute;
-                width: 4rem;
-                transform: translateY(-120%);
-                }
-            }
-        }
-    }
-
-    /* BENEFICIOS */
-
-    .beneficios{ 
-        &__section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 8%;
-        } 
-
-        &__block{
-            background-color: $color-celeste;
-            width: 80%;
-            padding: 2%;
-            font-size: 110%;
-    
-            p{
-                font-size: 100%;
-            }
-
-            h3{
-                font-size: 130%;
-            }
-        }
-
-        &__img{
-            background-color: $color-grismedio;
-            width: 80%;
-        }
-    }
-}
 
 @media screen and (min-width: 768px) {
     #carouselExampleControls{
