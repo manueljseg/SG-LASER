@@ -251,15 +251,17 @@
     }
 
     &__galeria{
+
         &__text{
+            
             h2{
                 font-size: $font-size-L;
             }
+
             &__specs{
                 display: flex;
                 justify-content: space-between;
                 margin-right: 10%;
-
                 align-items: flex-start;
 
                 img{
@@ -269,7 +271,25 @@
                 h3{
                     font-size: $font-size-normal+20;
                     text-align: start;
+
+                    span{
+                        font-size: $font-size-SM;
+                    }
                 }
+            }
+
+            button{
+                border: none;
+                background-color: $color-celeste;
+                padding: 1%;
+                border-radius: 5px;
+    
+                    p{
+                        font-size: $font-size-normal+10;
+                        font-weight: 600;
+                        color: $color-blanco;
+                        margin-bottom: 0%;
+                    }
             }
         }
     }
@@ -523,10 +543,6 @@
                     p{
                         font-size: $font-size-SM;
                     }
-
-                    span{
-                        font-size: $font-size-SM;
-                    }
                 }
             }
         }
@@ -606,7 +622,7 @@
 
     /* MEDIA QUERY: TABLET */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
     /* TRAYECTORIA */
         
@@ -615,32 +631,10 @@
     }
 
     .trayectoria{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
 
         &__historia{
             max-width: 100%;
-            text-align: center;
             padding: 5%;
-        }
-
-        &__stats{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-    
-            p{
-                margin-bottom: 4%;
-            }
-            
-            h3{
-                display: inline;
-                font-weight: 800;
-                font-size: 150%;
-                font-style: italic;
-                margin-left: 2%;
-            }
         }
     }
 
@@ -649,16 +643,46 @@
     .servicios{
         
         &__laser{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
 
-            .bloqueBlanco{ 
+            .bloqueBlanco{
+                margin: 0% 4% 6% 4%;
                 
                 img{
-                position: absolute;
-                width: 4rem;
-                transform: translateY(-120%);
+                    position: absolute;
+                    width: 4rem;
+                    transform: translateY(-120%);
+                }
+            }
+        }
+
+        &__galeria{
+
+            &__text{
+
+                margin-bottom: 10%;
+
+                h2{
+                    font-size: $font-size-L;
+                }
+    
+                &__specs{
+                    margin-right: 3%;
+    
+                    img{
+                        max-width: 3rem;
+                    }
+    
+                    h3{
+                        font-size: $font-size-normal;
+
+                        span{
+                            font-size: $font-size-SM;
+                        }
+                    }
+
+                    p{
+                        font-size: $font-size-SM;
+                    }
                 }
             }
         }
@@ -672,10 +696,10 @@
         }
 
         &__section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8%;
         } 
 
         &__block{

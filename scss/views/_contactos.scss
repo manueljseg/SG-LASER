@@ -52,14 +52,32 @@ iframe{
 }
 
 @media screen and (max-width: 480px) {
-    /* CONTACTOS */
 
-    .mail{
-        font-size: $font-size-SM;
-        width: 90%;
+    .contacts{
+
+        &__info{
+            text-align: center;
+
+            h2{
+                text-align: center;
+            }
+        }
+
+        &__mail{
+            font-size: $font-size-SM;
+        }
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .contacts{
 
+        &__info{
+            text-align: center;
+
+            h2{
+                text-align: center;
+            }
+        }
+    }
 }

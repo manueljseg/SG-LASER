@@ -40,7 +40,7 @@
   .header__brand {
     width: 60%; }
     .header__brand__logo {
-      width: 60%; }
+      width: 70%; }
   .header__list li {
     font-size: 100%; }
   .header__list a :active {
@@ -140,11 +140,25 @@
       flex-direction: column;
       align-items: flex-start; }
       .footer__info__brand {
-        align-items: center; }
+        align-items: center;
+        margin-top: 4%;
+        margin-left: auto;
+        margin-right: auto; }
     .footer__social__links a {
       margin: 2% 2% 0% 2%; }
     .footer__social__credits p {
       text-align: center; } }
+
+/* MEDIA QUERY: TABLET */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .footer h2 {
+    font-size: 200%;
+    margin: 2% 0% 5% 0%; }
+  .footer__info__brand {
+    align-items: center;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /* Fin FOOTER */
 /* ------------------------------------------------- */
@@ -330,6 +344,18 @@
     .servicios__galeria__text__specs h3 {
       font-size: 120%;
       text-align: start; }
+      .servicios__galeria__text__specs h3 span {
+        font-size: 80%; }
+  .servicios__galeria__text button {
+    border: none;
+    background-color: #1383c5;
+    padding: 1%;
+    border-radius: 5px; }
+    .servicios__galeria__text button p {
+      font-size: 110%;
+      font-weight: 600;
+      color: #f1f1f1;
+      margin-bottom: 0%; }
 
 /* INDEX: fin SERVICIOS */
 /* INDEX: inicio TERCEROS Y PRODUCTOS */
@@ -470,8 +496,6 @@
       font-size: 90%; }
     .servicios__galeria__text__specs p {
       font-size: 80%; }
-    .servicios__galeria__text__specs span {
-      font-size: 80%; }
   #carouselExampleControls {
     max-width: 85%;
     margin-bottom: 15%; }
@@ -511,39 +535,34 @@
   /* INDEX: fin BENEFICIOS */ }
 
 /* MEDIA QUERY: TABLET */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   /* TRAYECTORIA */
   iframe {
     max-width: 90%; }
-  .trayectoria {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; }
-    .trayectoria__historia {
-      max-width: 100%;
-      text-align: center;
-      padding: 5%; }
-    .trayectoria__stats {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between; }
-      .trayectoria__stats p {
-        margin-bottom: 4%; }
-      .trayectoria__stats h3 {
-        display: inline;
-        font-weight: 800;
-        font-size: 150%;
-        font-style: italic;
-        margin-left: 2%; }
+  .trayectoria__historia {
+    max-width: 100%;
+    padding: 5%; }
   /* NUESTROS SERVICIOS */
-  .servicios__laser {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
+  .servicios__laser .bloqueBlanco {
+    margin: 0% 4% 6% 4%; }
     .servicios__laser .bloqueBlanco img {
       position: absolute;
       width: 4rem;
       transform: translateY(-120%); }
+  .servicios__galeria__text {
+    margin-bottom: 10%; }
+    .servicios__galeria__text h2 {
+      font-size: 200%; }
+    .servicios__galeria__text__specs {
+      margin-right: 3%; }
+      .servicios__galeria__text__specs img {
+        max-width: 3rem; }
+      .servicios__galeria__text__specs h3 {
+        font-size: 100%; }
+        .servicios__galeria__text__specs h3 span {
+          font-size: 80%; }
+      .servicios__galeria__text__specs p {
+        font-size: 80%; }
   /* BENEFICIOS */
   .beneficios h2 {
     margin-top: 18%; }
@@ -696,10 +715,18 @@ iframe {
       padding: 2% 2% 2% 2%; }
 
 @media screen and (max-width: 480px) {
-  /* CONTACTOS */
-  .mail {
-    font-size: 80%;
-    width: 90%; } }
+  .contacts__info {
+    text-align: center; }
+    .contacts__info h2 {
+      text-align: center; }
+  .contacts__mail {
+    font-size: 80%; } }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .contacts__info {
+    text-align: center; }
+    .contacts__info h2 {
+      text-align: center; } }
 
 /* ------------------------------------------------- */
 /* inicio GENERAL */
