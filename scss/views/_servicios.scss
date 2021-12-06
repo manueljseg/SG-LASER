@@ -13,7 +13,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4,1fr);
         justify-content: space-evenly;
-        margin-right: 10%;
+        margin: 0% 10% 0% 0%;
         row-gap: 1%;
         column-gap: 2%;
 
@@ -30,8 +30,15 @@
         border: 5px solid rgba(19, 131, 197, .5);
         border-radius: 10px;
 
+        article{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
             img{
+                width: 80%;
                 border-radius: 5px;
             }
-}
+    }
 }
