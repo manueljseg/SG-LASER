@@ -20,6 +20,7 @@
     bottom: 5%;
     padding: 1% 1% 1% 1%;
     z-index: 2;
+    box-shadow: 0px 1px 10px $color-grismedio;
 
     i{
         color: $color-blanco;
@@ -48,7 +49,7 @@
     }
 
     h1{
-        font-size: 300%;
+        font-size: 400%;
         font-weight: 800;
     }
     
@@ -68,8 +69,13 @@
 
         &--padExtra{
             color: $color-blanco;
+            padding: 12% 25% 12% 4%;
+        }
+
+        &--nomargin{
+            color: $color-blanco;
             padding: 4% 20% 4% 4%;
-            padding: 16% 25% 16% 4%;
+            margin-bottom: 0%;
         }
 
         &__button{
@@ -108,22 +114,102 @@
 
     &__historia{
         max-width: 50%;
+
+        h2{
+            font-size: $font-size-L;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+
+            
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 150%;
+                height: 150%;
+                background: $color-grismedio;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%) skewX(30deg);
+                z-index: -1;
+
+                /* 
+                content: url(../images/vector_title.svg);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                */
+            }
+        }
+    }
+
+    &__video{
+
+        iframe{
+            position: relative;
+            box-shadow: 0px 1px 10px $color-grisoscuro;
+        }
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 60vh;
+            height: 300px;
+            background: $color-celeste;
+            right: 0%;
+            transform: translateY(-10%);
+            position: absolute;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        }
     }
 
     &__stats{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
-        margin-bottom: 4%;
-    
-        p{
-            margin-bottom: 4%;
-        }
-    
-        h3{
-            display: inline;
-            font-weight: 700;
-            font-size: $font-size-L;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2% 0% 4% 0%;
+
+        &__block{
+            text-align: center;
+            background-color: $color-gris;
+            border: 2px solid $color-celeste;
+            border-radius: 3px;
+            width: 20%;
+            padding: 1% 2% 1% 2%;
+            margin: 0% 2% 0% 2%;
+
+            h3{
+                display: inline;
+                font-size: $font-size-L;
+                font-weight: 800;
+            }
+
+            p{
+                font-weight: 500;
+            }
+
+            &--big{
+                text-align: center;
+                background-color: $color-gris;
+                border: 2px solid $color-celeste;
+                border-radius: 3px;
+                width: 30%;
+                padding: 2% 0% 2% 0%;
+
+                h3{
+                    display: inline;
+                    font-size: $font-size-L+50;
+                    font-weight: 800;
+                }
+
+                p{
+                    font-weight: 500;
+                }
+            }
         }
     }
 }
@@ -132,24 +218,87 @@
 
 /* INDEX: inicio SERVICIOS */
 
-.servicios__laser{
+.servicios{
     justify-content: center;
 
     h2{
         text-align: left;
-        margin-left: 4%;
+        font-weight: 600;
+        margin-bottom: 5%;
     }
 
-    .bloqueBlanco{
-        margin-top: 1rem;
-        padding-top: 4rem;
+    &__laser{
 
-        img{
-            position: absolute;
-            width: 6rem;
-            transform: translateY(-115%);
+        h3{
+            font-weight: 800;
+            color: $color-grismedio;
+        }
+
+        p{
+            font-size: $font-size-normal+10;
+        }
+
+        .bloqueBlanco{
+            margin-top: 1rem;
+            padding-top: 4rem;
+    
+            img{
+                position: absolute;
+                width: 6rem;
+                transform: translateY(-115%);
+            }
         }
     }
+
+    &__galeria{
+
+        &__text{
+            
+            h2{
+                font-size: $font-size-L;
+            }
+
+            &__specs{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 10%;
+                align-items: flex-start;
+
+                img{
+                    max-width: 4rem;
+                }
+
+                h3{
+                    font-size: $font-size-normal+20;
+                    text-align: start;
+
+                    span{
+                        font-size: $font-size-SM;
+                    }
+                }
+            }
+
+            button{
+                border: none;
+                background-color: $color-celeste;
+                padding: 1%;
+                border-radius: 5px;
+                margin-bottom: 4%;
+    
+                    p{
+                        font-size: $font-size-normal+10;
+                        font-weight: 600;
+                        color: $color-blanco;
+                        margin-bottom: 0%;
+                    }
+            }
+        }
+    }
+}
+
+#carouselExampleControls{
+    max-width: 40%;
+    margin-bottom: 15%;
 }
 
 /* INDEX: fin SERVICIOS */
@@ -160,15 +309,40 @@
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    margin-top: 5%;
+    margin: 5% 0% 5% 0%;
 
     &__bloque{
 
-        &--big{
+        h2{
+            font-weight: 700;
+            color: $color-grismedio;
+        }
+
+        &--serv{
+            transform: translateY(-40px);
+
+            /* buscar elemento para no repetir este codigo */
+            h2{
+                font-weight: 700;
+            }
 
             img{
                 max-width: 100%;
                 border-radius: 5px;
+            }
+        }
+
+        &--prod{
+            transform: translateY(40px);
+
+            /* buscar elemento para no repetir este codigo */
+            h2{
+                font-weight: 700;
+            }
+
+            img{
+                max-width: 60%;
+                margin-bottom: 2%;
             }
         }
 
@@ -181,15 +355,8 @@
     .bloqueBlanco{
         width: 40%;
         margin: 0% 4% 0% 4%;
-        transform: translateY(-30px);
     }
-
-    .greyBackground{
-        background-color: $color-grismedio;
-        margin-bottom: 4%;
-        padding-bottom: 0%;
-    }
-
+    
     .row{
         justify-content: center;
     }
@@ -202,6 +369,12 @@
 .beneficios{
     margin: 0% 10% 0% 10%;
 
+    h2{
+        font-size: $font-size-L;
+        font-weight: 700;
+        margin-bottom: 4%;
+    }
+
     &__section{
         display: flex;
         margin-bottom: 2%;
@@ -209,7 +382,7 @@
 
     /* OJO: no parece estar correctamente hecha la clase */
     &__block{
-        background-color: $color-celeste;
+        border: 2px solid $color-celeste;
         width: 40%;
         padding: 2%;
         text-align: left;
@@ -220,7 +393,8 @@
         justify-content: center;
 
         h3{
-            font-size: 200%;
+            font-size: $font-size-XL;
+            font-weight: 700;
         }
     }
 
@@ -234,5 +408,319 @@
     }
 }
 
-
 /* INDEX: fin BENEFICIOS */
+
+/* INDEX: inicio MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+
+    /* INDEX: fin BENEFICIOS */
+
+    .wppButton{
+        padding: 3%;
+
+        p{
+            display: none;
+        }
+    }    
+
+    /* MAIN: inicio TÍTULOS */
+
+    .titleIndex{ 
+
+        h1{
+            font-size: $font-size-L +60;
+            font-weight: 800;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: $font-size-normal;
+            margin: 2% 0% 5% 0%;
+        }
+}
+
+    /* INDEX: inicio TRAYECTORIA */
+
+    iframe{
+        max-width: 90%;
+    }
+
+    .trayectoria{
+        display: flex;
+        flex-flow: column wrap;
+
+
+        &__historia{
+            max-width: 100%;
+            text-align: left;
+            padding: 5%;
+
+            h2{
+                margin-bottom: 6%;
+
+                &::before{
+                    width: 110%;
+                    height: 120%;
+                    top: 50%;
+                    left: 0%;
+                    transform: translate(-20%, -50%) skewX(30deg);
+                }
+            }
+
+            p{
+                margin: 0% 5% 10% 5%;
+            }
+        }
+
+        &__stats{
+
+            p{
+                margin-bottom: 4%;
+            }
+
+            &__block{
+                width: 30%;
+
+                h3{
+                    font-size: $font-size-M;
+                }
+
+                p{
+                    font-size: $font-size-SM;
+                }
+
+                &--big{
+                    width: 40%;
+                    
+                    h3{
+                        font-size: $font-size-M+20;
+                    }
+
+                    p{
+                        font-size: $font-size-SM;
+                    }
+                }
+            }
+        }
+
+        &__video{
+
+            &::before{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .servicios{
+        &__laser{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+            .bloqueBlanco{
+                width: 80%;
+
+                img{
+                    position: absolute;
+                    width: 4rem;
+                    transform: translateY(-120%);
+                }
+            }
+        }
+
+        &__galeria{
+            &__text{
+                &__specs{
+                    margin-right: 0%;
+                    justify-content: space-evenly;
+
+                    div{
+                        width: 20%;
+                    }
+                    
+                    h3{
+                        font-size: $font-size-SM +10;
+                    }
+
+                    p{
+                        font-size: $font-size-SM;
+                    }
+                }
+            }
+        }
+    }
+
+    #carouselExampleControls{
+        max-width: 85%;
+        margin-bottom: 15%;
+    }
+
+    /* INDEX: inicio TERCEROS Y PRODUCTOS */
+
+    .tercProd{
+
+        .row{
+            justify-content: space-evenly;
+        }
+
+        p{
+            font-size: $font-size-SM;
+        }
+
+        h2{
+            font-size: $font-size-M;
+        }
+
+        .greyBackground{
+            background-color: $color-grismedio;
+            padding-bottom: 0%;
+        }
+
+        .bloqueBlanco{
+            margin: 0% 0% 0% 0%
+        }
+
+    }
+
+    /* INDEX: fin TERCEROS Y PRODUCTOS */
+
+    /* INDEX: inicio BENEFICIOS */
+
+    .beneficios{
+        margin: 0% 4% 0% 4%;
+
+        h2{
+            margin-top: 18%;
+        }
+
+        &__section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8%;
+        }
+    
+        &__block{
+            width: 80%;
+            padding: 2%;
+            font-size: $font-size-normal+10;
+    
+            p{
+                font-size: 80%;
+            }
+        
+            h3{
+                font-size: $font-size-L;
+            }
+        }
+    
+        &__img{
+            width: 80%;
+        }
+    }
+
+    /* INDEX: fin BENEFICIOS */
+}
+
+    /* MEDIA QUERY: TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* TRAYECTORIA */
+        
+    iframe{
+        max-width: 90%;
+    }
+
+    .trayectoria{
+
+        &__historia{
+            max-width: 100%;
+            padding: 5%;
+        }
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .servicios{
+        
+        &__laser{
+
+            .bloqueBlanco{
+                margin: 0% 4% 6% 4%;
+                
+                img{
+                    position: absolute;
+                    width: 4rem;
+                    transform: translateY(-120%);
+                }
+            }
+        }
+
+        &__galeria{
+
+            &__text{
+
+                margin-bottom: 10%;
+
+                h2{
+                    font-size: $font-size-L;
+                }
+    
+                &__specs{
+                    margin-right: 3%;
+    
+                    img{
+                        max-width: 3rem;
+                    }
+    
+                    h3{
+                        font-size: $font-size-normal;
+
+                        span{
+                            font-size: $font-size-SM;
+                        }
+                    }
+
+                    p{
+                        font-size: $font-size-SM;
+                    }
+                }
+            }
+        }
+    }
+
+    #carouselExampleControls{
+        max-width: 40%;
+    }
+
+
+    /* BENEFICIOS */
+
+    .beneficios{
+        h2{
+            margin-top: 18%;
+        }
+
+        &__section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8%;
+        } 
+
+        &__block{
+            width: 80%;
+            padding: 2%;
+            font-size: 110%;
+        }
+
+        &__img{
+            width: 80%;
+        }
+    }
+}

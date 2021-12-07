@@ -10,9 +10,15 @@
     a{
         text-decoration: none;
         color: $color-blanco;
+        transition: 0.2s ease-in-out;
+        -moz-transition: 0.2s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out;
 
         &:hover{
             color: $color-celeste;
+            transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
         }
     }
 
@@ -82,6 +88,16 @@
             a{
                 margin: 2% 1% 0% 1%;
                 color: $color-celeste;
+                transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+
+                &:hover{
+                    color: $color-blanco;
+                    transition: 0.2s ease-in-out;
+                    -moz-transition: 0.2s ease-in-out;
+                    -webkit-transition: 0.2s ease-in-out;
+                }
             }
         }
 
@@ -93,6 +109,18 @@
             p{
                 opacity: 60%;
                 margin: 2% 1% 4% 1%;
+            }
+
+            a{
+                transition: 0.1s ease-in-out;
+                -moz-transition: 0.1s ease-in-out;
+                -webkit-transition: 0.1s ease-in-out;
+
+                &:hover{
+                    transition: 0.1s ease-in-out;
+                    -moz-transition: 0.1s ease-in-out;
+                    -webkit-transition: 0.1s ease-in-out;
+                }
             }
         }
     }
@@ -116,6 +144,9 @@
 
             &__brand{
                 align-items: center;
+                margin-top: 4%;
+                margin-left: auto;
+                margin-right: auto;
             }
     
         }
@@ -133,6 +164,28 @@
                 p{
                     text-align: center;
                 }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERY: TABLET */
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .footer{
+
+        h2{
+            font-size: $font-size-L;
+            margin: 2% 0% 5% 0%;
+        }
+
+        &__info{
+
+            &__brand{
+                align-items: center;
+                margin-top: 4%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }

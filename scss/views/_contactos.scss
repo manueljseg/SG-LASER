@@ -32,6 +32,52 @@ iframe{
         a{
             text-decoration: none;
             color: $color-blanco;
+            margin: 0% 3% 0% 0%;
+            transition: 0.2s ease-in-out;
+            -moz-transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+
+            &:hover{
+                color: $color-celeste;
+                transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+            }
+        }
+    
+    .bloqueBlanco{
+        padding: 2% 2% 2% 2%;
+    }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .contacts{
+
+        &__info{
+            text-align: center;
+
+            h2{
+                text-align: center;
+            }
+        }
+
+        &__mail{
+            font-size: $font-size-SM;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .contacts{
+
+        &__info{
+            text-align: center;
+
+            h2{
+                text-align: center;
+            }
         }
     }
 }

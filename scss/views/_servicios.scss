@@ -13,7 +13,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4,1fr);
         justify-content: space-evenly;
-        margin-right: 10%;
+        margin: 0% 5% 0% 0%;
         row-gap: 1%;
         column-gap: 2%;
 
@@ -26,12 +26,57 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        padding: 2% 2% 2% 2%;
-        border: 5px solid rgba(19, 131, 197, .5);
-        border-radius: 10px;
+
+        &__block{
+            padding: 5%;
+            border: 5px solid rgba(19, 131, 197, .5);
+            border-radius: 10px;
+        }
+
+        article{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
 
             img{
+                width: 80%;
                 border-radius: 5px;
             }
+    }
 }
+
+   /* SERVICIOS */
+
+    @media screen and (max-width: 480px) {
+
+    .galeriaServ{
+        flex-flow: row wrap;
+        margin: 4% 4%;
+
+        &__images{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+            margin: 0% 2% 15% 2%;
+
+                img{
+                    max-width: 100%;
+                }
+        }
+
+        &__materials{
+
+            &__block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                border-radius: 5px;
+                border: 3px solid rgba(19, 131, 197, .5);
+            }
+
+            img{
+                width: 70%;
+            }
+        }
+    }
 }
