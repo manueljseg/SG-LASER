@@ -350,12 +350,17 @@
     border: none;
     background-color: #1383c5;
     padding: 1%;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-bottom: 4%; }
     .servicios__galeria__text button p {
       font-size: 110%;
       font-weight: 600;
       color: #f1f1f1;
       margin-bottom: 0%; }
+
+#carouselExampleControls {
+  max-width: 40%;
+  margin-bottom: 15%; }
 
 /* INDEX: fin SERVICIOS */
 /* INDEX: inicio TERCEROS Y PRODUCTOS */
@@ -563,6 +568,8 @@
           font-size: 80%; }
       .servicios__galeria__text__specs p {
         font-size: 80%; }
+  #carouselExampleControls {
+    max-width: 40%; }
   /* BENEFICIOS */
   .beneficios h2 {
     margin-top: 18%; }
@@ -611,6 +618,15 @@
   max-width: 80%;
   margin-bottom: 5%; }
 
+@media screen and (max-width: 480px) {
+  .placas {
+    width: 70%;
+    text-align: center; } }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .placas {
+    width: 90%; } }
+
 /* ------------------------------------------------- */
 /* SERVICIOS */
 .galeriaServ {
@@ -623,7 +639,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     justify-content: space-evenly;
-    margin: 0% 10% 0% 0%;
+    margin: 0% 5% 0% 0%;
     row-gap: 1%;
     column-gap: 2%; }
     .galeriaServ__images img {
@@ -631,10 +647,11 @@
   .galeriaServ__materials {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    padding: 2% 2% 2% 2%;
-    border: 5px solid rgba(19, 131, 197, 0.5);
-    border-radius: 10px; }
+    align-items: center; }
+    .galeriaServ__materials__block {
+      padding: 5%;
+      border: 5px solid rgba(19, 131, 197, 0.5);
+      border-radius: 10px; }
     .galeriaServ__materials article {
       display: flex;
       flex-flow: column wrap;
@@ -642,6 +659,26 @@
     .galeriaServ__materials img {
       width: 80%;
       border-radius: 5px; }
+
+/* SERVICIOS */
+@media screen and (max-width: 480px) {
+  .galeriaServ {
+    flex-flow: row wrap;
+    margin: 4% 4%; }
+    .galeriaServ__images {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      margin: 0% 2% 15% 2%; }
+      .galeriaServ__images img {
+        max-width: 100%; }
+    .galeriaServ__materials__block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      border-radius: 5px;
+      border: 3px solid rgba(19, 131, 197, 0.5); }
+    .galeriaServ__materials img {
+      width: 70%; } }
 
 /* ------------------------------------------------- */
 /* ARCHIVOS */
@@ -808,30 +845,3 @@ iframe {
   background-color: #1383c5; }
 
 /* fin GENERAL */
-/* ------------------------------------------------- */
-/* MEDIA QUERY - CELULAR */
-@media screen and (max-width: 480px) {
-  /* GENERAL */
-  /* PRODUCTOS */
-  .placas {
-    width: 60%;
-    text-align: center; }
-  /* SERVICIOS */
-  .galeriaServ__images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4;
-    justify-content: space-evenly;
-    margin-right: 5%; }
-    .galeriaServ__images img {
-      max-width: 100%; }
-  /* CONTACTOS */
-  .mail {
-    font-size: 80%;
-    width: 90%; } }
-
-/* ------------------------------------------------- */
-/* MEDIA QUERY: TABLET */
-@media screen and (min-width: 768px) {
-  #carouselExampleControls {
-    max-width: 40%; } }
