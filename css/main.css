@@ -685,7 +685,9 @@
 .guiaArchivos {
   margin: 2% 8% 2% 8%; }
   .guiaArchivos__texto {
-    padding: 0% 25% 5% 0%; }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
     .guiaArchivos__texto h3 {
       text-align: left;
       font-size: 250%; }
@@ -696,6 +698,10 @@
       margin-left: 5%; }
     .guiaArchivos__texto__span {
       color: #1383c5; }
+    .guiaArchivos__texto__img {
+      margin: 5%; }
+      .guiaArchivos__texto__img img {
+        width: 100%; }
   .guiaArchivos__instructivo {
     display: flex;
     justify-content: center; }
@@ -724,6 +730,37 @@
   background-color: #f1f1f1;
   padding: 2% 2% 2% 2%;
   margin: 2% 0% 2% 4%; }
+
+@media screen and (max-width: 480px) {
+  .guiaArchivos__texto {
+    flex-flow: row wrap; }
+    .guiaArchivos__texto h3 {
+      text-align: left;
+      font-size: 200%; }
+    .guiaArchivos__texto p {
+      font-weight: 400;
+      font-size: 100%; }
+    .guiaArchivos__texto ul, .guiaArchivos__texto ol {
+      margin-left: 5%; }
+    .guiaArchivos__texto__span {
+      color: #1383c5; }
+    .guiaArchivos__texto__img {
+      margin: 5%; }
+      .guiaArchivos__texto__img img {
+        width: 100%; }
+  .guiaArchivos__instructivo {
+    display: flex;
+    justify-content: center; }
+    .guiaArchivos__instructivo a {
+      text-decoration: none;
+      color: #f1f1f1;
+      font-size: 120%;
+      font-family: inherit;
+      font-weight: 700;
+      padding: 1% 1%; }
+  .guiaArchivos__lista {
+    font-size: 130%;
+    font-weight: 500; } }
 
 /* ------------------------------------------------- */
 /* CONTACTOS */

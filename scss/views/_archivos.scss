@@ -6,7 +6,9 @@
     margin: 2% 8% 2% 8%;
 
     &__texto{
-        padding: 0% 25% 5% 0%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     
         h3{
             text-align: left;
@@ -24,6 +26,14 @@
 
         &__span{
             color: $color-celeste;
+        }
+
+        &__img{
+            margin: 5%;
+
+            img{
+                width: 100%;
+            }
         }
     }
 
@@ -63,4 +73,59 @@
     background-color: $color-blanco;
     padding: 2% 2% 2% 2%;
     margin: 2% 0% 2% 4%;
+}
+
+@media screen and (max-width: 480px) {
+
+    .guiaArchivos{
+
+        &__texto{
+            flex-flow: row wrap;
+        
+            h3{
+                text-align: left;
+                font-size: $font-size-L;
+            }
+        
+            p{
+                font-weight: 400;
+                font-size: $font-size-normal;
+            }
+        
+            ul, ol{
+                margin-left: 5%;
+            }
+
+            &__span{
+                color: $color-celeste;
+            }
+
+            &__img{
+                margin: 5%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        &__instructivo{
+            display: flex;
+            justify-content: center;
+        
+            a{
+                text-decoration: none;
+                color: $color-blanco;
+                font-size: 120%;
+                font-family: inherit;
+                font-weight: 700;
+                padding: 1% 1%;
+            }
+        }
+
+        &__lista{
+            font-size: $font-size-M;
+            font-weight: 500;
+        }
+    }
 }
